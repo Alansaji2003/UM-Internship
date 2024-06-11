@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* utility classes */
+.border{
+    border: 0px solid white;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+.bg-light-cyan{
+    background-color:#AF47D2 ;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 1rem;
+}
+.p-1{
+    padding: 1rem;
+}
+.gap-1{
+    gap: 10px;
+}
+
+/* For Webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #26355D; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #AF47D2; 
+    border-radius: 6px; 
+    border: 3px solid #26355D; 
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #FF8F00 #26355D;
+}
+
+/* Optional: Styling the scrollbar on the HTML and body elements */
+html, body {
+    scrollbar-width: thin;
+    scrollbar-color: #FF8F00 #26355D;
+}
+
+/* =========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    
+}
+body{
+    background-color:#26355D;
+    color: black;
+
+}
+.left{
+    width: 25vw;
+
+}
+.right{
+    width: 75vw;
+   
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.leftOptions:hover{
+   
+    color: white;
+    cursor: pointer;
+}
+.logoName {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.home ul li{
+    display: flex;
+    list-style: none;
+    width: 15px;
+    gap:15px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.library img{
+    width: 30px;
+    padding: 5px;
+}
+.library h2{
+    flex-grow: 1;
+}
+
+.library {
+    
+    max-height: 48vh; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.playlist{
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+    
+}
+.playlist li{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 3px;
+    border-radius: 7px;
+}
+.playlist li:hover{
+    background-color: #FF8F00;
+    color: white;
+    cursor: pointer;
+}
+.rHeader{
+    padding: 5px;
+}
+.nav{
+justify-content: space-between;
+
+}
+.prev:hover, .next:hover, .ham:hover{
+    color: white;
+    cursor: pointer;
+}
+.symphonyPlaylist{
+    max-height: 68vh;
+}
+.symphonyPlaylist .card{
+    width: 150px;
+    padding: 10px;
+    background-color: #FF8F00;
+    border-radius: 7px;
+    position: relative;
+}
+.symphonyPlaylist .card:hover{
+   cursor: pointer;
+}
+.symphonyPlaylist img{
+    width: 100%;
+    border-radius: 7px;
+}
+.symphonyPlaylist p{
+    font-size: small;
+}
+.symphonyPlaylist svg{
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.symphonyPlaylist .card:hover ~ svg {
+    top: 100px;
+    opacity: 1;
+}
+.openPlaylist{
+    overflow-y: scroll;
+    max-height: 56vh;
+}
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-height: 58vh;
+    overflow-y: scroll;
+}
+.hidden{
+    display: none;
+}
+.playbar{
+    position: fixed;
+    width: 98%;
+    bottom: 0;
+    left: 0;
+    background-color: #FF8F00; 
+    z-index: 20; 
+    padding: 10px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+.addForm input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+}
+.addForm button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+    background-color: #684920;
+    color: white;
+}
+.addForm button:hover{
+    background-color:#FF8F00 ;
+}
+
+.loading{
+    width: 30px !important;
+}
+
+.seekbar{
+    height: 0.5px;
+    width: 98%;
+    background-color: #c71c1c;
+    padding: 2px;
+    position: absolute;
+    bottom: 1px;
+    border-radius: 10px;
+    margin: 1px;
+    cursor: pointer;
+}
+.playback{
+    margin-bottom: 2px;
+}
+
+.seekCircle{
+    width: 10px;
+    height: 10px;
+    border-radius: 13px;
+    background-color: #AF47D2;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    left:0%;
+    transition: left 0.5s;
+}
+
+.openSongUL li{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 3px;
+    border-radius: 7px;
+}
+.openSongUL li:hover{
+    background-color: #FF8F00;
+    color: white;
+    cursor: pointer;
+}
+.songInfo, .songTime, .volumn {
+    position: absolute;
+}
+.songInfo{
+    left: 10px;
+    bottom: 15px;
+    max-width: 45vw;
+    max-height: 30px;
+    
+}
+.songTime{
+    right: 10px;
+    bottom: 10px;
+}
+.volumn{
+    right: 150px;
+    bottom: 10px;
+}
+.vol-img{
+    position: relative;
+    top: 7px;
+}
+.addSongButton{
+    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+    background-color: #684920;
+    color: white;
+}
+.addSongButton:hover{
+    background-color:#FF8F00 ;
+}
+.addSongForm button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+    background-color: #684920;
+    color: white;
+}
+.addSongForm button:hover{
+    background-color:#FF8F00 ;
+}
+.addSongForm input{
+    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+}
+.owner{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.home-gif{
+    
+    width: 60%;
+    
+}
+.HomeGifContainer{
+    gap: 60px;
+}
+.add-playlist{
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: large;
+    background-color: #684920;
+}
+.add-playlist:hover{
+    background-color:#FF8F00 ;
+}
+.ham:hover{
+    box-shadow: inset 0 0 0 2px white;
+}
+.close:hover{
+    cursor: pointer;
+   
+}
+.songInfo {
+    overflow: hidden; /* Hide the overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    max-width: 100%; /* Ensure it doesn't exceed parent width */
+    position: relative;
+}
+
+.scrolling-text {
+    display: inline-block;
+    margin-top: 10px;
+    animation: scrollText 10s linear infinite; /* Scroll effect */
+}
+.prev-song, .next-song, #playButton:hover{
+    cursor: pointer;
+}
+@media (max-width:1180px){
+    .symphonyPlaylist .card{
+        width: 130px;
+    }
+    .logoName {
+        font-size: 20px;
+    }
+    .home-gif{
+        display: none;
+    }
+}
+@media (max-width:840px){
+    .left{
+        position: absolute;
+        left:-100%;
+        transition: all 0.3s;
+        z-index: 30;
+        width: 233px;
+    }
+    .right{
+        width: 100vw;
+    }
+    .ham{
+        display: inline-block;
+    }
+    .playbar{
+        width: 96%;
+    }
+    
+    .volumn{
+        display: none;
+    }
+    .owner{
+        display: none;
+    }
+}
+@keyframes scrollText {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the end */
+    }
+}
+
+@media (min-width: 1200px) {
+    .songInfo {
+        overflow:unset; /* Show the overflow */
+        white-space: normal;
+    }
+    .scrolling-text {
+        animation: none; /* Remove the animation */
+    }
+}
