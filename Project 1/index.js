@@ -53,7 +53,7 @@ function addPlaylistOnLeft(card) {
 
 //Firebase configuration
 const firebaseConfig = {
-    //your config files here
+   // Your web app's Firebase configuration
 };
 
 // Initialize Firebase
