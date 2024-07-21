@@ -54,6 +54,18 @@ function addPlaylistOnLeft(card) {
 //Firebase configuration
 const firebaseConfig = {
    // Your web app's Firebase configuration
+   //
+   //
+   //
+   //
+   //
+   apiKey: "AIzaSyBwi1_SDXKnt_wT3CPSMIuGUMHKOmslDSI",
+    authDomain: "symphony-d7292.firebaseapp.com",
+    projectId: "symphony-d7292",
+    storageBucket: "symphony-d7292.appspot.com",
+    messagingSenderId: "812946380528",
+    appId: "1:812946380528:web:149d08b5f785b19bde1435",
+    measurementId: "G-27J9VZYR3Q"
 };
 
 // Initialize Firebase
