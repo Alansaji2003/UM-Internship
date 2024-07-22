@@ -37,3 +37,11 @@ Make sure to replace the Firebase configuration placeholders in `index.js` with 
 ## Credits
 
 - This project uses Lorem Picsum for placeholder images.
+
+
+## The site is live at 
+- https://symphonyplayer-alansaji.netlify.app/
+
+## Demo
+
+![Alt text](https://alansaji-portfolio.netlify.app/assets/img/proj26.gif)
